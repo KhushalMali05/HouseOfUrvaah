@@ -1,0 +1,144 @@
+.feedback-parallax-container {
+  position: relative;
+  height: 250vh; /* Increased slightly from 200vh for a smoother transition */
+  background-color: #F5F1E8;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Added a moderate margin-bottom */
+}
+
+.feedback-sticky-wrapper {
+  position: sticky;
+  top: 90px;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 60px;
+  z-index: 10;
+  width: 100%;
+}
+
+.feedback-subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.feedback-main-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 48px); /* Adjusted to 'medium' scale */
+  line-height: 1.2;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-top: 15px;
+  letter-spacing: 0.15em; /* Slightly more spacing for premium feel */
+}
+
+.italic-accent {
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--color-accent);
+}
+
+.feedback-track {
+  display: flex;
+  gap: 40px;
+  padding-right: 10vw; /* Padding on the right because it moves left to right */
+  will-change: transform;
+}
+
+.feedback-card {
+  width: 320px;
+  background: white;
+  padding: 30px 40px; /* Reduced vertical padding from 40px to 30px */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced gap from 20px */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  border: 1px solid rgba(176, 122, 79, 0.1);
+  border-radius: 4px;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.feedback-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-accent);
+}
+
+.feedback-quote-icon {
+  font-family: var(--font-serif);
+  font-size: 60px; /* Reduced from 80px */
+  color: var(--color-accent);
+  line-height: 0.5;
+  opacity: 0.3;
+}
+
+.feedback-text {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+.feedback-divider {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-accent);
+}
+
+.feedback-author-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.author-name {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+}
+
+.author-location {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--color-accent);
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.author-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.rating-star {
+  color: #D4AF37; /* Gold Star */
+}
+
+@media (max-width: 768px) {
+  .feedback-card {
+    width: 320px;
+    padding: 30px;
+  }
+  .feedback-text {
+    font-size: 16px;
+  }
+}

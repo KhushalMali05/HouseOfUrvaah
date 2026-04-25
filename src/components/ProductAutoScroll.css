@@ -1,0 +1,134 @@
+.product-autoscroll-container {
+  padding: 40px 0 40px; /* Reduced bottom padding from 100px to 40px */
+  background-color: #F5F1E8;
+  overflow: hidden;
+}
+
+.autoscroll-header {
+  text-align: center;
+  margin-bottom: 30px; /* Reduced from 60px */
+}
+
+.autoscroll-subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.autoscroll-title {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3.5vw, 40px); /* Reduced from 56px max */
+  color: var(--color-primary);
+  text-transform: uppercase;
+  margin-top: 10px;
+  letter-spacing: 0.12em; /* Slightly wider for premium feel */
+}
+
+.autoscroll-viewport {
+  width: 100%;
+  display: flex;
+}
+
+.autoscroll-track {
+  display: flex;
+  gap: 30px;
+  padding: 0 15px;
+}
+
+.product-item-card {
+  width: 210px; /* Reduced from 240px */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.product-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px; /* Reduced from 320px */
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #eee;
+}
+
+.product-scroll-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-item-card:hover .product-scroll-img {
+  transform: scale(1.08);
+}
+
+.product-discount-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #D4AF37; /* Premium Gold/Yellow */
+  color: #000;
+  padding: 6px 0;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  z-index: 10;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-quick-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(13, 26, 20, 0.9);
+  color: var(--color-accent);
+  padding: 15px 0;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+
+.product-item-card:hover .product-quick-view {
+  transform: translateY(0);
+}
+
+.product-info-minimal {
+  text-align: center;
+}
+
+.product-scroll-name {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.product-scroll-price {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .product-item-card {
+    width: 260px;
+  }
+  .product-img-wrapper {
+    height: 380px;
+  }
+}

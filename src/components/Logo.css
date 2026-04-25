@@ -1,0 +1,61 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-house-of {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.8em;
+  color: #000;
+  margin-bottom: -5px;
+}
+
+.logo-urvaah {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: -0.05em; /* Compressed like Zara */
+  text-transform: uppercase;
+}
+
+.logo-divider {
+  display: none; /* Zara doesn't use dividers in logos */
+}
+
+.logo-tagline {
+  font-family: var(--font-sans);
+  font-size: 8px;
+  letter-spacing: 0.4em;
+  color: var(--color-heading);
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .logo-urvaah {
+    font-size: 24px;
+  }
+  .logo-house-of {
+    font-size: 10px;
+  }
+  .logo-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+}

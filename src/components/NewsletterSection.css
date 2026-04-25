@@ -1,0 +1,107 @@
+.newsletter-section {
+    padding: 80px 5% 120px 5%; /* Adjusted to a more balanced 80px */
+    background-color: var(--color-bg-primary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-container {
+    max-width: 800px;
+}
+
+.newsletter-title {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    text-transform: none; /* The image shows Title Case */
+    font-family: var(--font-serif);
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+
+.newsletter-subtitle {
+    font-family: var(--font-sans);
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+}
+
+.newsletter-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+    height: 60px;
+}
+
+.newsletter-input {
+    flex: 1;
+    background-color: #f0ede4; /* A light creamy color from the image */
+    border: none;
+    padding: 0 25px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-text);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.newsletter-input::placeholder {
+    color: #999;
+}
+
+.newsletter-input:focus {
+    background-color: var(--color-bg-secondary);
+}
+
+.newsletter-submit-btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0 40px;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(196, 140, 70, 0.3);
+}
+
+.newsletter-submit-btn:hover {
+    background-color: var(--color-accent);
+    letter-spacing: 0.15em;
+    box-shadow: 0 10px 30px rgba(196, 140, 70, 0.4);
+}
+
+@media (max-width: 768px) {
+    .newsletter-section {
+        padding: 80px 5%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+    }
+
+    .newsletter-input {
+        height: 55px;
+    }
+
+    .newsletter-submit-btn {
+        height: 55px;
+        width: 100%;
+    }
+}
