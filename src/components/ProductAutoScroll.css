@@ -125,10 +125,37 @@
 }
 
 @media (max-width: 768px) {
-  .product-item-card {
-    width: 260px;
+  .product-autoscroll-container {
+    padding: 60px 0;
   }
+
+  .product-item-card {
+    width: 180px;
+  }
+  
   .product-img-wrapper {
-    height: 380px;
+    height: 240px;
+  }
+
+  .product-scroll-name {
+    font-size: 16px;
+  }
+
+  .autoscroll-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item-card {
+    width: 150px;
+  }
+  
+  .product-img-wrapper {
+    height: 200px;
+  }
+
+  .product-scroll-name {
+    font-size: 14px;
   }
 }

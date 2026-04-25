@@ -134,11 +134,42 @@
 }
 
 @media (max-width: 768px) {
-  .feedback-card {
-    width: 320px;
-    padding: 30px;
+  .feedback-parallax-container {
+    height: 300vh; /* More scroll space for multiple cards */
   }
+
+  .feedback-sticky-wrapper {
+    top: 70px;
+    height: calc(100vh - 70px);
+  }
+
+  .feedback-header {
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .feedback-card {
+    width: 280px;
+    padding: 25px;
+  }
+
   .feedback-text {
     font-size: 16px;
+  }
+
+  .feedback-main-title {
+    font-size: 28px;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-card {
+    width: 260px;
+    padding: 20px;
+  }
+
+  .feedback-subtitle {
+    font-size: 12px;
   }
 }
